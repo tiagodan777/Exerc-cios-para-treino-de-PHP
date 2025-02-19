@@ -3,8 +3,8 @@
         $user = [];
         $user['email'] = $_COOKIE['email'] ?? null;
         $user['password'] = $_COOKIE['password'] ?? null;
-        setcookie('email', $email, time() + 120, '/', '', false, true);
-        setcookie('password', $password, time() + 120, '/', '', false, true);
+        setcookie('email', $email, time() + 480, '/', '', false, true);
+        setcookie('password', $password, time() + 480, '/', '', false, true);
 
         return $user;
     }
